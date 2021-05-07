@@ -15,6 +15,7 @@ repositories {
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
+	runtimeOnly('org.springframework.boot:spring-boot-devtools')  // 로컬환경에서 수정된 코드가 자동으로 반영
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
