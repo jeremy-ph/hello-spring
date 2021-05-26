@@ -14,7 +14,7 @@ public class MemberService {
     * 회원가입
     * */
     public Long join(Member member) {
-        memberRepository.findByName(member.getName())
+        memberRepository.findByName(member.getName());
         memberRepository.save(member);
         return member.getId();
     }
